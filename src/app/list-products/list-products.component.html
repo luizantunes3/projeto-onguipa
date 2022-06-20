@@ -1,0 +1,27 @@
+<div class="product-list">
+    <div class="product-list__area">
+        <p><i class="fa-brands fa-hotjar"></i> Destaques da Loja</p>
+
+        <div class="product-list__card" *ngFor="let product of products">
+
+            <div class="product-list__display">
+                <img [src]="(product.photo)" width="150px">
+                <div class="product-list__background"></div>
+            </div>
+
+            <div class="product-list__description">
+                <p>{{ product.title }}</p>
+            
+                <div class="product-description__more">
+                    <p>{{ product.description }}</p>
+                    
+                    <p><b>Marca:</b> {{ product.brand }}</p>
+                    <p><b>Preço:</b> {{ product.price }} R$</p>
+                </div>
+
+                <button type="button"><i class="fa-solid fa-cart-plus"></i> Comprar</button>
+
+            </div>
+        </div>
+    </div>
+</div>

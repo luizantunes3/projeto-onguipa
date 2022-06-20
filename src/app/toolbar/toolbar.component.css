@@ -1,0 +1,40 @@
+  /* CSS GLOBAL */
+.toolbar__flex{
+    background-color: #444444;
+    color: white;
+    height: 50px;
+}
+
+.toolbar__items{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 800px;
+}
+
+ul li{
+    display: inline;
+    padding: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+
+  .toolbar__items > span p i{
+    color: green;
+  }
+
+  /* CSS COM RESPONSIVIDADE */
+  @media screen and (max-width: 767px) {
+    .toolbar__items{
+        transition-duration: 0.5s;
+        width: 600px;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .toolbar__items{
+        transition-duration: 0.5s;
+        width: 100%;
+        font-size: 12px;
+    }
+  }

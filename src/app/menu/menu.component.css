@@ -1,0 +1,86 @@
+/*CSS GLOBAL*/
+.menu__flex{
+    background-color:rgb(2, 58, 122);
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.menu__block1{
+    display: flex;
+    align-items: center;
+    color: white;
+    letter-spacing: -1px;
+}
+
+input[type=text] {
+    width: 200px;
+    height: 30px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border:solid 1px #ccc;
+    border-radius: 50px;
+  }
+
+.menu__block2 > i{
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+li:hover{
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+ul li{
+    display: inline;
+    padding: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+
+
+  /* CSS COM RESPONSIVIDADE */
+.menu__responsive{
+    display: none;
+    visibility: hidden;
+}
+
+  @media screen and (max-width: 916px) {
+    .menu__responsive{
+        display:flex;
+        align-items: center;
+        visibility: visible;
+    }
+
+    .menu__responsive > button{
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    .menu__responsive > i{
+       cursor: pointer;
+    }
+
+    .menu__responsive > img{
+        margin-left: 20px;
+    }
+
+    .menu__block1{
+        display:none;
+        visibility:hidden;
+    }
+
+  }
+
+  @media screen and (max-width: 482px) {
+    .menu__block2 > i{
+        display:none;
+        visibility:hidden;
+    }
+  }
